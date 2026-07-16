@@ -127,11 +127,6 @@ function fillInProjects(projects) {
     var card = document.createElement("div");
     card.className = "project-card";
 
-    var image = document.createElement("img");
-    image.className = "project-image";
-    image.src = project.image;
-    image.alt = project.title;
-
     var title = document.createElement("h3");
     title.textContent = project.title;
 
@@ -152,7 +147,6 @@ function fillInProjects(projects) {
     link.href = project.link;
     link.textContent = "View Project ->";
 
-    card.appendChild(image);
     card.appendChild(title);
     card.appendChild(description);
     card.appendChild(tagsWrapper);
