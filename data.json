@@ -1,11 +1,5 @@
-/* ==========================================
-   MY PORTFOLIO STYLESHEET
-   I am using simple colors and fonts to keep
-   things easy to read and easy to change later.
-   ========================================== */
 
-/* Reset some default browser spacing */
-* {
+{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
