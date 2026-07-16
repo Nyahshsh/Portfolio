@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Janiyah Tan - Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+
+  <!-- My stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER / NAVIGATION ============ -->
+  <header>
+    <div class="nav-container">
+      <h2 class="logo">Janiyah Tan</h2>
+
+      <!-- This button only shows up on small screens -->
+      <button id="menu-btn">☰ Menu</button>
+
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ HOME SECTION ============ -->
+  <section id="home">
+    <div class="container">
+      <img src="assets/profile.jpg" alt="Photo of Janiyah Tan" class="profile-pic">
+      <h1 id="profile-name">Loading...</h1>
+      <p id="profile-role">UI/UX Designer</p>
+      <p id="profile-tagline">Loading...</p>
+      <a href="#projects" class="btn">See My Projects</a>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT SECTION ============ -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p id="profile-bio">Loading...</p>
+      <p><strong>Location:</strong> <span id="profile-location"></span></p>
+      <p><strong>Email:</strong> <span id="profile-email-text"></span></p>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS SECTION ============ -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">My Skills</h2>
+      <!-- This div will be filled by JavaScript using data.json -->
+      <div id="skills-container"></div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS SECTION ============ -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">My Projects</h2>
+      <!-- This div will be filled by JavaScript using data.json -->
+      <div id="projects-container"></div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION SECTION ============ -->
+  <section id="education">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <!-- This div will be filled by JavaScript using data.json -->
+      <div id="education-container"></div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT SECTION ============ -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact Me</h2>
+      <p>Feel free to reach out if you want to work together!</p>
+      <p><strong>Email:</strong> <a id="profile-email-link" href="#">Loading...</a></p>
+
+      <!-- Simple contact form. It does not send anywhere yet. -->
+      <form id="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <p><small>(This form does not actually send messages yet. That will be added later.)</small></p>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <p>&copy; 2026 Janiyah Tan. Made for my Web Development 1 class.</p>
+  </footer>
+
+  <!-- My JavaScript file, loaded at the end so the HTML loads first -->
+  <script src="js/main.js"></script>
+</body>
+</html>
