@@ -179,6 +179,14 @@ nav ul li a:hover {
   padding: 60px 0;
 }
 
+"skills": [
+  { "name": "HTML", "level": 50, "category": "Structure" },
+  { "name": "CSS", "level": 40, "category": "Style" },
+  { "name": "JavaScript", "level": 30, "category": "Logic" },
+  { "name": "Prototyping", "level": 70, "category": "Design" },
+  { "name": "Figma", "level": 78, "category": "Tooling" }
+]
+
 /* Each skill card, one per skill in data.json */
 .skill-card {
   background-color: #ffffff;
